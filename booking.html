@@ -1,3 +1,6 @@
+Here’s the updated version of your script with the **number of passengers** and **luggage fields removed** from the Airport Transfer section. The rest of the functionality remains intact:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,12 +122,6 @@
 
                 <label for="destination">Destination:</label>
                 <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
-
-                <label for="passengers">Number of Passengers:</label>
-                <input type="number" id="passengers" name="passengers" min="1" max="3" required>
-
-                <label for="luggage">Number of Luggage:</label>
-                <input type="number" id="luggage" name="luggage" min="1" max="4" required>
             </div>
 
             <!-- VIP Service Details -->
@@ -205,3 +202,17 @@
     </script>
 </body>
 </html>
+```
+
+### Changes Made:
+1. **Removed Fields**:
+   - Removed the `Number of Passengers` field (`<input type="number" id="passengers" name="passengers" min="1" max="3" required>`).
+   - Removed the `Number of Luggage` field (`<input type="number" id="luggage" name="luggage" min="1" max="4" required>`).
+
+2. **Simplified Airport Transfer Section**:
+   - The Airport Transfer section now only includes the `Pickup Address` and `Destination` fields.
+
+3. **Preserved All Other Functionality**:
+   - The VIP Service section and all other features remain unchanged.
+
+Let me know if you need further adjustments! 😊
