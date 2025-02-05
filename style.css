@@ -1,0 +1,23 @@
+/* Date and Time Fields Styles */
+#dateTimeFields {
+    margin-top: 20px;
+}
+
+#dateTimeFields label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d4af37; /* Gold */
+}
+
+#dateTimeFields input[type="date"],
+#dateTimeFields input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2a3a6f; /* Lighter Navy Blue */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #0a1f44; /* Navy Blue */
+    color: #fff; /* White */
+}
