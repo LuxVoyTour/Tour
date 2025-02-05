@@ -176,3 +176,50 @@ button:hover {
 .additional-info ul li strong {
     color: #d4af37; /* Gold */
     ```
+    /* Contact Form Styles */
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a2a4f; /* Darker Navy Blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #d4af37; /* Gold */
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2a3a6f; /* Lighter Navy Blue */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #0a1f44; /* Navy Blue */
+    color: #fff; /* White */
+}
+
+#contactForm textarea {
+    resize: vertical; /* Pozwala użytkownikom zmieniać wysokość pola tekstowego */
+}
+
+#contactForm button {
+    background-color: #d4af37; /* Gold */
+    color: #0a1f44; /* Navy Blue */
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contactForm button:hover {
+    background-color: #b99330; /* Darker Gold */
+}
