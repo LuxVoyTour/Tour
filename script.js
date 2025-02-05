@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const serviceType = document.getElementById("serviceType");
     const locationFields = document.getElementById("locationFields");
     const vipOptions = document.getElementById("vipOptions");
-    const tourOptions = document.getElementById("tourOptions");
     const drinkOptions = document.getElementById("drinkOptions");
 
     serviceType.addEventListener("change", function () {
@@ -21,18 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
             drinkOptions.classList.remove("hidden");
         } else {
             vipOptions.classList.add("hidden");
-        }
-
-        // Show Tour options
-        if (selectedService === "tour") {
-            tourOptions.classList.remove("hidden");
-            drinkOptions.classList.remove("hidden");
-        } else {
-            tourOptions.classList.add("hidden");
-        }
-
-        // Hide drink options for Airport Transfer
-        if (selectedService === "airport") {
             drinkOptions.classList.add("hidden");
         }
     });
