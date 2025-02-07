@@ -1,23 +1,24 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0a1f44; /* Navy Blue */
-    color: #d4af37; /* Gold */
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
     text-align: center;
 }
 
 header {
-    background-color: #0a1f44; /* Navy Blue */
-    color: #d4af37; /* Gold */
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem; /* Zmniejszono z 2.5rem */
+    font-family: 'Playfair Display', serif;
 }
 
 nav ul {
@@ -26,24 +27,22 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #1a2a4f; /* Darker Navy Blue */
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px 15px;
 }
 
 nav ul li a {
-    color: #d4af37; /* Gold */
+    color: #ffffff; /* White */
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 15px;
-    display: block;
+    font-size: 1rem; /* Zmniejszono z 1.1rem */
 }
 
 nav ul li a:hover {
-    background-color: #2a3a6f; /* Lighter Navy Blue */
-    border-radius: 5px;
+    color: #cccccc; /* Light Gray */
 }
 
 main {
@@ -53,170 +52,310 @@ main {
 }
 
 h2 {
-    color: #d4af37; /* Gold */
-    font-size: 2rem;
+    color: #000000; /* Black */
+    font-size: 1.5rem; /* Zmniejszono z 2rem */
     margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 p {
     line-height: 1.6;
-    color: #fff; /* White */
+    color: #333333; /* Dark Gray */
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
 .cta-button {
-    background-color: #d4af37; /* Gold */
-    color: #0a1f44; /* Navy Blue */
+    background-color: #000000; /* Black */
+    color: #ffffff; /* White */
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
 .cta-button:hover {
-    background-color: #b99330; /* Darker Gold */
+    background-color: #333333; /* Dark Gray */
 }
 
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: #1a2a4f; /* Darker Navy Blue */
+/* Hero Section */
+.hero {
+    background-image: url('https://luxvoytour.co.uk/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Zmniejszono z 400px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff; /* White */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Black with opacity */
+    padding: 20px; /* Zmniejszono z 40px */
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem; /* Zmniejszono z 2rem */
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 40px 20px; /* Zmniejszono z 60px */
+    background-color: #f9f9f9; /* Light Gray */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff; /* White */
+    padding: 15px; /* Zmniejszono z 20px */
+    border-radius: 10px;
+    width: 100%; /* Zmieniono z 30% na 100% dla lepszej responsywności */
+    margin: 10px 0; /* Zmieniono z 10px */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #000000; /* Black */
 }
 
-th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #2a3a6f; /* Lighter Navy Blue */
+.card:hover {
+    transform: translateY(-10px);
 }
 
-th {
-    background-color: #0a1f44; /* Navy Blue */
-    color: #d4af37; /* Gold */
+.card i {
+    font-size: 2rem; /* Zmniejszono z 2.5rem */
+    margin-bottom: 10px;
+    color: #000000; /* Black */
 }
 
-tr:hover {
-    background-color: #2a3a6f; /* Lighter Navy Blue */
+.card h3 {
+    font-size: 1.2rem; /* Zmniejszono z 1.8rem */
+    margin-bottom: 10px;
 }
 
-/* Form Styles */
-form {
+.card p {
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px; /* Zmniejszono z 60px */
+    background-color: #ffffff; /* White */
+}
+
+/* Book Now Section */
+.book-now {
+    padding: 40px 20px; /* Zmniejszono z 60px */
+    background-color: #f9f9f9; /* Light Gray */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Black */
+    padding: 20px;
+    color: #ffffff; /* White */
+}
+
+.social-media a {
+    color: #ffffff; /* White */
+    margin: 0 10px;
+    font-size: 1.2rem; /* Zmniejszono z 1.5rem */
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #cccccc; /* Light Gray */
+}
+
+/* Contact Form Styles */
+.contact-form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #1a2a4f; /* Darker Navy Blue */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-label {
+.contact-form label {
     display: block;
-    margin-top: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
-    color: #d4af37; /* Gold */
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
-input, select, textarea, button {
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #2a3a6f; /* Lighter Navy Blue */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-    background-color: #0a1f44; /* Navy Blue */
-    color: #fff; /* White */
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
-textarea {
-    resize: vertical; /* Pozwala użytkownikom zmieniać wysokość pola tekstowego */
+.contact-form textarea {
+    resize: vertical;
 }
 
-button {
-    background-color: #d4af37; /* Gold */
-    color: #0a1f44; /* Navy Blue */
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 20px;
+.contact-form button {
+    background-color: #000000;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
-button:hover {
-    background-color: #b99330; /* Darker Gold */
+.contact-form button:hover {
+    background-color: #333333;
 }
 
-.hidden {
-    display: none;
+/* Pricing Table Styles */
+.pricing-table {
+    margin: 20px auto;
+    max-width: 800px;
 }
 
-/* Image Container Styles */
-.image-container {
-    margin-top: 20px;
-    text-align: center;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-.responsive-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Additional Information Styles */
-.additional-info {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #1a2a4f; /* Darker Navy Blue */
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
     text-align: left;
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
-.additional-info h3 {
-    color: #d4af37; /* Gold */
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.additional-info {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .additional-info ul {
     list-style-type: disc;
     padding-left: 20px;
-    color: #fff; /* White */
 }
 
-.additional-info ul li {
+.additional-info li {
     margin-bottom: 10px;
-    line-height: 1.6;
+    font-size: 0.9rem; /* Zmniejszono z 1rem */
 }
 
-.additional-info ul li strong {
-    color: #d4af37; /* Gold */
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Zmniejszono z 2rem */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Zmniejszono z 1rem */
+    }
+
+    .hero {
+        height: 250px; /* Zmniejszono z 300px */
+    }
+
+    .hero h2 {
+        font-size: 1.2rem; /* Zmniejszono z 1.5rem */
+    }
+
+    .hero p {
+        font-size: 0.8rem; /* Zmniejszono z 0.9rem */
+    }
+
+    .card {
+        width: 100%; /* Karty zajmują całą szerokość na mniejszych ekranach */
+        margin: 10px 0;
+    }
+
+    .card h3 {
+        font-size: 1rem; /* Zmniejszono z 1.2rem */
+    }
+
+    .card p {
+        font-size: 0.8rem; /* Zmniejszono z 0.9rem */
+    }
+
+    .contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 0.8rem; /* Zmniejszono z 0.9rem */
+    }
+
+    th, td {
+        font-size: 0.8rem; /* Zmniejszono z 0.9rem */
+    }
+
+    .additional-info li {
+        font-size: 0.8rem; /* Zmniejszono z 0.9rem */
+    }
 }
 
-/* Date and Time Fields Styles */
-#dateTimeFields {
-    margin-top: 20px;
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
 }
 
-#dateTimeFields label {
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
     display: block;
-    margin-top: 10px;
     font-weight: bold;
-    color: #d4af37; /* Gold */
 }
 
-#dateTimeFields input[type="date"],
-#dateTimeFields input[type="time"] {
+input, select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #2a3a6f; /* Lighter Navy Blue */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #0a1f44; /* Navy Blue */
-    color: #fff; /* White */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.hidden {
+    display: none;
 }
